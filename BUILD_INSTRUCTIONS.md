@@ -1,6 +1,12 @@
 # ENIGMA yig‘ish va Android APK olish
 
-## Android telefondan GitHub orqali
+## Tayyor birinchi bob APKsi
+
+[APKni bevosita yuklab olish](https://github.com/OdilxonAbdullayev/enigma/raw/refs/heads/apk-v0.2.0/enigma-android-debug.apk) — **57 504 299 bayt (~54.84 MiB)**. Bu `ea67e44` manba holatidan lokal eksport qilingan haqiqiy v0.2.0 debug yig‘ma. [SHA256](https://github.com/OdilxonAbdullayev/enigma/blob/apk-v0.2.0/SHA256SUMS.txt).
+
+Yuklangan APKni telefoningizning fayl boshqaruvchisidan oching. Android so‘rasa, shu ilovaga o‘rnatish ruxsatini bering. Kod yozish yoki Godot sahnalarini yig‘ish shart emas. Fizik Android qurilmada hali tekshirilmagan.
+
+## Android telefondan GitHub orqali qayta yig‘ish
 
 1. Repozitoriyning **Actions → Android APK** bo‘limini oching.
 2. `main` yoki `work` tarmog‘iga o‘zgarish yuborilganda yig‘ish avtomatik boshlanadi. Zarur bo‘lsa **Run workflow** ni bosing.

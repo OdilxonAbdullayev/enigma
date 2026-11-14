@@ -22,3 +22,16 @@ Audio tugunlarini to‘xtatib, oqimlarini bo‘shatib, mixer uchun navbatdagi ka
 Quyidagilar **bajarilmagan**: fizik Android qurilmaga o‘rnatish, Redmi sinovi, ARM runtime sessiyasi, audio chiqishi, back/fon/uyqu sikli, qurilmada FPS/xotira/issiqlik/batareya, Google Play imzolangan release APK/AAB, do‘kon relizi. 30/60 FPS sozlamasi shu tezlikka erishish kafolati emas.
 
 Mahsulot yakuniy tijoriy reliz emas. Keyingi reliz mezonlari `ROADMAP.md` da.
+
+## Yakuniy yig‘malar
+
+Yig‘ilgan manba: `ea67e44f69d8c876bb831720a8de947b882d24f9`. Keyingi hujjat commitlari o‘yin kodini o‘zgartirmaydi.
+
+| Fayl | Bayt | SHA256 |
+|---|---:|---|
+| enigma-android-debug.apk | 57504299 | c980edca886ad0d14f32425b368aedb156f7fd1bceb500bf650b8bb5a29bdd1b |
+| enigma-linux.x86_64 | 72158664 | f56fa847498b63462083ac09e17d59db64761e6906c36c8e9d3d56e1f13a9150 |
+
+APK `apksigner verify --verbose` v2/v3 imzosidan o‘tdi. `aapt dump badging` paket nomi `org.enigma.forgottenworld`, v0.2.0, min24/target36, ARM64+ARMv7 ni tasdiqladi. APKdagi barcha JSON, lokalizatsiya, shrift va litsenziya fayllari tekshirildi. Yakuniy eksportlar xatosiz.
+
+Eksportlangan Linux binarining ichki PCK resurslari `godot --main-pack builds/enigma-linux.x86_64 --script /tmp/enigma_packed_smoke.gd` orqali ishga tushirildi: bosh sahna, shriftlar, UI, audio va lokalizatsiya yuklandi, audio mixerga vaqt berib yopildi, xato/ogohlantirish bo‘lmadi. Bu Linuxdagi paket sinovi; ARM qurilmada ishlashni tasdiqlamaydi.

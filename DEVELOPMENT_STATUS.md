@@ -32,7 +32,9 @@ Jami oxirgi jamlangan sinovda **543 tekshiruv, 0 xato**. Alohida X11/OpenGL kiri
 
 Avtomatik topilgan va tuzatilgan xato: sensor orqali oynani yopish paytida tugun daraxtdan darhol uzilishi Godot kirish tarqatishiga xalaqit berardi. Endi yashirish va kechiktirilgan o‘chirish ishlatiladi; qayta sinov toza.
 
-Yig‘ma natijalari va cheklovlar [TEST_RESULTS.md](docs/TEST_RESULTS.md) da.
+Yakuniy lokal eksportlar yaratildi: Android APK 57 504 299 bayt, Linux 72 158 664 bayt. APK `apksigner` v2/v3 tekshiruvidan o‘tdi; manifest API24/target36, ARM64/ARMv7. Paketdagi JSON kataloglari va litsenziyalar tekshirildi. Yakuniy eksport loglari xatosiz; eksportlangan Linux paketidagi sahna ishga tushishi va boshqarilgan yopilishi xatosiz sinovdan o‘tdi.
+
+Manba `main` tarmog‘iga yuborildi. APK alohida `apk-v0.2.0` tarmog‘ida yuklab olinadi; bu GitHub Release yoki Play relizi emas. [APK olish](BUILD_INSTRUCTIONS.md). Yig‘ma natijalari va cheklovlar [TEST_RESULTS.md](docs/TEST_RESULTS.md) da.
 
 ## Bajarilmagan ishlar
 
