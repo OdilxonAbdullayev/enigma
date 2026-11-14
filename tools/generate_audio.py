@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproducible original ENIGMA synth score, rain and interaction cues (CC0)."""
+"""Reproducible original ENIGMA synth score, rain and interaction cues."""
 from pathlib import Path
 import math
 import random

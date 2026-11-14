@@ -1,10 +1,8 @@
-ENIGMA procedural audio assets
+ENIGMA procedural audio provenance
 
 station_theme.wav, station_rain.wav, touch.wav, success.wav, mechanism.wav,
-train.wav and their generator tools/generate_audio.py were created originally
-for this project. No external samples or recordings are used.
+train.wav and tools/generate_audio.py were created originally for ENIGMA.
+No external samples, voices or recordings are used.
 
-These generated audio assets are dedicated to the public domain under
-CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
-To the extent permitted by law, the creators waive copyright and related rights
-in these audio assets. They are supplied without warranty.
+The project owner has not selected a public distribution license.
+This provenance record does not grant a public-domain dedication or license.
