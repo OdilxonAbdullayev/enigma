@@ -1,0 +1,1 @@
+c980edca886ad0d14f32425b368aedb156f7fd1bceb500bf650b8bb5a29bdd1b  enigma-android-debug.apk

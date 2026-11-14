@@ -1,8 +1,0 @@
-ENIGMA procedural audio provenance
-
-station_theme.wav, station_rain.wav, touch.wav, success.wav, mechanism.wav,
-train.wav and tools/generate_audio.py were created originally for ENIGMA.
-No external samples, voices or recordings are used.
-
-The project owner has not selected a public distribution license.
-This provenance record does not grant a public-domain dedication or license.
