@@ -1,0 +1,56 @@
+{
+  "letter": {
+    "name": "Noma’lum xat",
+    "description": "«Qoratepa bekatiga keling. Hamma soatlar to‘xtagan daqiqada men sizni kutaman. O‘zingiz bilan faqat xotirangizni olib keling. — M.» Xat chetida: KO‘Z = 1, OY = 2, QUYOSH = 3. «Avval tun uyg‘onar, so‘ng kuzatuvchi qarar, keyin tong ochar».",
+    "icon": "✉",
+    "kind": "document"
+  },
+  "brass_key": {
+    "name": "Jez kalit",
+    "description": "Jomadondan topilgan eski kalit. Dastasiga «Bekat boshlig‘i» deb o‘yilgan.",
+    "icon": "⚿",
+    "kind": "tool"
+  },
+  "broken_watch": {
+    "name": "Singan cho‘ntak soati",
+    "description": "Qopqog‘ida sizning ismingiz o‘rnida tirnalgan iz bor. Ichidagi kichik tishli g‘ildirak yetishmaydi.",
+    "icon": "◷",
+    "kind": "mechanism"
+  },
+  "gear": {
+    "name": "Kichik tishli g‘ildirak",
+    "description": "Javondagi baxmal qutichadan topildi. U singan cho‘ntak soatiga mos keladi.",
+    "icon": "⚙",
+    "kind": "component"
+  },
+  "repaired_watch": {
+    "name": "Tiklangan cho‘ntak soati",
+    "description": "Soat yana yurmoqda, ammo millari 21:15 da qotadi. Go‘yo u shu lahzani unutishga qarshidek.",
+    "icon": "◷",
+    "kind": "mechanism"
+  },
+  "fuse": {
+    "name": "Keramik saqlagich",
+    "description": "Katta soatning yashirin bo‘lmasidagi elektr saqlagich. Yerto‘ladagi taqsimlagichga mos keladi.",
+    "icon": "▥",
+    "kind": "component"
+  },
+  "ticket": {
+    "name": "21:15 chiptasi",
+    "description": "Jo‘nash vaqti: 21:15. Yo‘lovchi: N. To‘lov bugun qilingan. Bekat esa o‘ttiz yil oldin yopilgan.",
+    "icon": "▤",
+    "kind": "evidence"
+  },
+  "wet_note": {
+    "name": "Hali nam yozuv",
+    "description": "«Chiroqni chap, o‘ng, o‘rta, chap tartibida yoq. Poyezd elektrni emas, xotirani eshitadi». Siyoh hali qurimagan. Imzo: M. — 21:16.",
+    "icon": "✎",
+    "kind": "evidence"
+  },
+  "artifact": {
+    "name": "Xotira parchasi",
+    "description": "Kutish zalidagi tamg‘a ortidan topilgan binafsha xotira parchasi. Unda yetti nuqta bor; hozir faqat bittasi yorishgan. Bu ixtiyoriy topilma asosiy yo‘l uchun shart emas.",
+    "icon": "◇",
+    "kind": "collectible"
+  }
+}

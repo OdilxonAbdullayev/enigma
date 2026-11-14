@@ -1,0 +1,12 @@
+.godot/
+builds/*
+!builds/.gitkeep
+!builds/.gdignore
+*.tmp
+*.log
+*.keystore
+.export/
+.tools/
+.local/
+__pycache__/
+*.pyc

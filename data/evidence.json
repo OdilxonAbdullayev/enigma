@@ -1,0 +1,30 @@
+{
+  "letter": {
+    "name": "Noma’lum xat",
+    "description": "«Qoratepa bekatiga keling. Hamma soatlar to‘xtagan daqiqada men sizni kutaman. O‘zingiz bilan faqat xotirangizni olib keling. — M.» Xat chetida: KO‘Z = 1, OY = 2, QUYOSH = 3. «Avval tun uyg‘onar, so‘ng kuzatuvchi qarar, keyin tong ochar»."
+  },
+  "timetable": {
+    "name": "Yo‘nalish jadvali",
+    "description": "Perrondagi jadvalda oxirgi qatnov 03:14 deb ko‘rsatilgan. Chetidagi yozuv: «Jomadonimga vaqtni yashirdim. Boshlang‘ich nolning keragi yo‘q». Demak, qulf kodi — 314."
+  },
+  "ticket": {
+    "name": "Chipta — 21:15",
+    "description": "N. ismli yo‘lovchining chiptasi bugun 21:15 da bosilgan. Bekat o‘ttiz yil avval yopilgan bo‘lsa, uni kim sotgan?"
+  },
+  "wet_note": {
+    "name": "Nam yozuv — 21:16",
+    "description": "«Chiroqni chap, o‘ng, o‘rta, chap tartibida yoq. Poyezd elektrni emas, xotirani eshitadi». Siyoh hali qurimagan. Imzo: M. — 21:16."
+  },
+  "watch": {
+    "name": "Tiklangan soat",
+    "description": "Soatni tikladim. U 21:15 ni ko‘rsatmoqda. Katta soatning millarini ham shu vaqtga qo‘yish kerak."
+  },
+  "footprints": {
+    "name": "Yangi oyoq izlari",
+    "description": "Nam loydagi izlar eshik tomon emas, devor tomonga ketgan. U yerda esa faqat eski ko‘zgu turibdi."
+  },
+  "cipher": {
+    "name": "Uch belgi",
+    "description": "Oy — 2. Ko‘z — 1. Quyosh — 3. Bu raqamlar boshliq xonasidagi javon halqalariga mos keladi."
+  }
+}

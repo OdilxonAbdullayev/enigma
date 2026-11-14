@@ -1,0 +1,628 @@
+[
+  {
+    "id": 1,
+    "title": "Noma’lum xat",
+    "location": "Tashlandiq temiryo‘l bekati",
+    "status": "implemented",
+    "palette": "midnight_blue",
+    "rooms": [
+      "platform",
+      "hall",
+      "office",
+      "cellar"
+    ],
+    "ending": "Haydovchisiz poyezd keladi.",
+    "puzzles": [
+      {
+        "id": "suitcase_open",
+        "status": "implemented",
+        "depends_on": [],
+        "kind": "number_lock"
+      },
+      {
+        "id": "cipher_solved",
+        "status": "implemented",
+        "depends_on": [],
+        "kind": "symbol_substitution"
+      },
+      {
+        "id": "office_unlocked",
+        "status": "implemented",
+        "depends_on": [
+          "suitcase_open"
+        ],
+        "kind": "item_use"
+      },
+      {
+        "id": "cabinet_open",
+        "status": "implemented",
+        "depends_on": [
+          "office_unlocked",
+          "cipher_solved"
+        ],
+        "kind": "rotating_discs"
+      },
+      {
+        "id": "watch_repaired",
+        "status": "implemented",
+        "depends_on": [
+          "cabinet_open"
+        ],
+        "kind": "inventory_combination"
+      },
+      {
+        "id": "clock_set",
+        "status": "implemented",
+        "depends_on": [
+          "watch_repaired"
+        ],
+        "kind": "clock_synchronization"
+      },
+      {
+        "id": "power_restored",
+        "status": "implemented",
+        "depends_on": [
+          "clock_set"
+        ],
+        "kind": "circuit_switches"
+      },
+      {
+        "id": "evidence_linked",
+        "status": "implemented",
+        "depends_on": [
+          "office_unlocked"
+        ],
+        "kind": "evidence_connection"
+      },
+      {
+        "id": "signal_sent",
+        "status": "implemented",
+        "depends_on": [
+          "power_restored",
+          "evidence_linked"
+        ],
+        "kind": "memory_sequence"
+      }
+    ],
+    "unlock_requires": []
+  },
+  {
+    "id": 2,
+    "title": "Unutilgan qasr",
+    "location": "Xotira qasri",
+    "status": "planned",
+    "palette": "emerald",
+    "rooms": [
+      "foyer",
+      "gallery",
+      "study",
+      "changing_room",
+      "stairwell"
+    ],
+    "ending": "Suratdagi bola o‘zingizga o‘xshaydi.",
+    "puzzles": [
+      {
+        "id": "portrait_order",
+        "status": "planned",
+        "depends_on": [
+          "signal_sent"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "frame_latch",
+        "status": "planned",
+        "depends_on": [
+          "portrait_order"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "diary_pages",
+        "status": "planned",
+        "depends_on": [
+          "frame_latch"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "store_code",
+        "status": "planned",
+        "depends_on": [
+          "diary_pages"
+        ],
+        "kind": "memory",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "clock_spring",
+        "status": "planned",
+        "depends_on": [
+          "store_code"
+        ],
+        "kind": "investigation",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "manor_clock",
+        "status": "planned",
+        "depends_on": [
+          "clock_spring"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "mirror_room",
+        "status": "planned",
+        "depends_on": [
+          "manor_clock"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "hidden_stair",
+        "status": "planned",
+        "depends_on": [
+          "mirror_room"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      }
+    ],
+    "unlock_requires": [
+      "chapter_1_complete"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Sirlar kutubxonasi",
+    "location": "Qadimiy kutubxona",
+    "status": "planned",
+    "palette": "antique_gold",
+    "rooms": [
+      "reading_hall",
+      "librarian",
+      "catalogue",
+      "archive"
+    ],
+    "ending": "Shahar ataylab yashirilgani ma’lum bo‘ladi.",
+    "puzzles": [
+      {
+        "id": "catalogue_index",
+        "status": "planned",
+        "depends_on": [
+          "hidden_stair"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "historical_alphabet",
+        "status": "planned",
+        "depends_on": [
+          "catalogue_index"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "book_weights",
+        "status": "planned",
+        "depends_on": [
+          "historical_alphabet"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "torn_manuscript",
+        "status": "planned",
+        "depends_on": [
+          "book_weights"
+        ],
+        "kind": "memory",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "star_shelf",
+        "status": "planned",
+        "depends_on": [
+          "torn_manuscript"
+        ],
+        "kind": "investigation",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "librarian_memory",
+        "status": "planned",
+        "depends_on": [
+          "star_shelf"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "archive_seal",
+        "status": "planned",
+        "depends_on": [
+          "librarian_memory"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "disappearance_record",
+        "status": "planned",
+        "depends_on": [
+          "archive_seal"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      }
+    ],
+    "unlock_requires": [
+      "chapter_2_complete"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Sehrli o‘rmon",
+    "location": "Qadimiy o‘rmon",
+    "status": "planned",
+    "palette": "mystic_violet",
+    "rooms": [
+      "crossroads",
+      "statues",
+      "grove",
+      "labyrinth",
+      "sanctuary"
+    ],
+    "ending": "Yerosti dunyosiga yo‘l ochiladi.",
+    "puzzles": [
+      {
+        "id": "light_trail",
+        "status": "planned",
+        "depends_on": [
+          "disappearance_record"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "roots_water",
+        "status": "planned",
+        "depends_on": [
+          "light_trail"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "statue_faces",
+        "status": "planned",
+        "depends_on": [
+          "roots_water"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "artifact_tones",
+        "status": "planned",
+        "depends_on": [
+          "statue_faces"
+        ],
+        "kind": "memory",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "moon_pool",
+        "status": "planned",
+        "depends_on": [
+          "artifact_tones"
+        ],
+        "kind": "investigation",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "path_memory",
+        "status": "planned",
+        "depends_on": [
+          "moon_pool"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "sanctuary_gears",
+        "status": "planned",
+        "depends_on": [
+          "path_memory"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "underground_gate",
+        "status": "planned",
+        "depends_on": [
+          "sanctuary_gears"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      }
+    ],
+    "unlock_requires": [
+      "chapter_3_complete"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Soat minorasi",
+    "location": "Mexanik minora",
+    "status": "planned",
+    "palette": "dark_bronze",
+    "rooms": [
+      "base",
+      "gear_room",
+      "pendulum",
+      "observatory",
+      "time_chamber"
+    ],
+    "ending": "Vaqt ataylab boshqarilgani isbotlanadi.",
+    "puzzles": [
+      {
+        "id": "gear_ratio",
+        "status": "planned",
+        "depends_on": [
+          "underground_gate"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "counterweight",
+        "status": "planned",
+        "depends_on": [
+          "gear_ratio"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "pendulum_sync",
+        "status": "planned",
+        "depends_on": [
+          "counterweight"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "lift_circuit",
+        "status": "planned",
+        "depends_on": [
+          "pendulum_sync"
+        ],
+        "kind": "memory",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "lens_alignment",
+        "status": "planned",
+        "depends_on": [
+          "lift_circuit"
+        ],
+        "kind": "investigation",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "event_reconstruction",
+        "status": "planned",
+        "depends_on": [
+          "lens_alignment"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "three_clocks",
+        "status": "planned",
+        "depends_on": [
+          "event_reconstruction"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "time_regulator",
+        "status": "planned",
+        "depends_on": [
+          "three_clocks"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      }
+    ],
+    "unlock_requires": [
+      "chapter_4_complete"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Yerosti shahri",
+    "location": "Unutilgan sivilizatsiya",
+    "status": "planned",
+    "palette": "emerald_blue",
+    "rooms": [
+      "district",
+      "power_hall",
+      "laboratory",
+      "records",
+      "memory_vault"
+    ],
+    "ending": "Qahramonning tajribaga aloqasi ochiladi.",
+    "puzzles": [
+      {
+        "id": "district_route",
+        "status": "planned",
+        "depends_on": [
+          "time_regulator"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "conduit_network",
+        "status": "planned",
+        "depends_on": [
+          "district_route"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "lab_symbols",
+        "status": "planned",
+        "depends_on": [
+          "conduit_network"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "resident_registry",
+        "status": "planned",
+        "depends_on": [
+          "lab_symbols"
+        ],
+        "kind": "memory",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "sample_sort",
+        "status": "planned",
+        "depends_on": [
+          "resident_registry"
+        ],
+        "kind": "investigation",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "memory_sequence",
+        "status": "planned",
+        "depends_on": [
+          "sample_sort"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "identity_prism",
+        "status": "planned",
+        "depends_on": [
+          "memory_sequence"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "experiment_origin",
+        "status": "planned",
+        "depends_on": [
+          "identity_prism"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      }
+    ],
+    "unlock_requires": [
+      "chapter_5_complete"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "So‘nggi haqiqat",
+    "location": "Markaziy xona",
+    "status": "planned",
+    "palette": "ivory_violet",
+    "rooms": [
+      "memory_corridor",
+      "central_chamber"
+    ],
+    "ending": "Uch yakun: Ozodlik, Fidoyilik yoki Unutilgan haqiqat.",
+    "puzzles": [
+      {
+        "id": "seven_evidence",
+        "status": "planned",
+        "depends_on": [
+          "experiment_origin"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "memory_bridges",
+        "status": "planned",
+        "depends_on": [
+          "seven_evidence"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "central_gears",
+        "status": "planned",
+        "depends_on": [
+          "memory_bridges"
+        ],
+        "kind": "cipher",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "identity_lock",
+        "status": "planned",
+        "depends_on": [
+          "central_gears"
+        ],
+        "kind": "memory",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "truth_links",
+        "status": "planned",
+        "depends_on": [
+          "identity_lock"
+        ],
+        "kind": "investigation",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "final_choice",
+        "status": "planned",
+        "depends_on": [
+          "truth_links"
+        ],
+        "kind": "environment",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      },
+      {
+        "id": "world_resolution",
+        "status": "planned",
+        "depends_on": [
+          "final_choice"
+        ],
+        "kind": "mechanical",
+        "design_note": "Oldingi kashfiyot keyingi mexanizmning tushunarli ishorasini va zarur buyumini beradi; noto‘g‘ri urinish buyumni yo‘qotmaydi."
+      }
+    ],
+    "unlock_requires": [
+      "chapter_6_complete"
+    ]
+  }
+]

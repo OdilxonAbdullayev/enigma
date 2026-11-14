@@ -1,0 +1,106 @@
+{
+  "arrival": {
+    "title": "To‘xtagan vaqt",
+    "text": "Qoratepa bekatiga yetib keldim. Hamma soatlar to‘xtagan. Relslarda zang bor, ammo perronda yangi izlar ko‘rinadi."
+  },
+  "letter": {
+    "title": "Meni chaqirgan xat",
+    "text": "«Qoratepa bekatiga keling. Hamma soatlar to‘xtagan daqiqada men sizni kutaman. O‘zingiz bilan faqat xotirangizni olib keling. — M.» Xat chetida: KO‘Z = 1, OY = 2, QUYOSH = 3. «Avval tun uyg‘onar, so‘ng kuzatuvchi qarar, keyin tong ochar»."
+  },
+  "cipher": {
+    "title": "Uch belgi",
+    "text": "Oy — 2. Ko‘z — 1. Quyosh — 3. Bu raqamlar boshliq xonasidagi javon halqalariga mos keladi."
+  },
+  "cipher_solved": {
+    "title": "Belgilar yechildi",
+    "text": "Oy, ko‘z va quyosh: 2 — 1 — 3. Javon qulfida ham shu uch belgi bor."
+  },
+  "timetable": {
+    "title": "03:14 qatnovi",
+    "text": "Perrondagi jadvalda oxirgi qatnov 03:14 deb ko‘rsatilgan. Chetidagi yozuv: «Jomadonimga vaqtni yashirdim. Boshlang‘ich nolning keragi yo‘q». Demak, qulf kodi — 314."
+  },
+  "suitcase": {
+    "title": "Qaytishini kutgan jomadon",
+    "text": "Jomadondan singan cho‘ntak soati va boshliq xonasining jez kaliti topildi. Jomadon egasi safar vaqtini qulfga yashirgan."
+  },
+  "suitcase_open": {
+    "title": "Jomadon ochildi",
+    "text": "Jadvaldagi 03:14 va boshlang‘ich nol haqidagi yozuv 314 kodini berdi. Jomadondan jez kalit bilan singan soatni oldim."
+  },
+  "office_unlocked": {
+    "title": "Boshliqning xonasi",
+    "text": "Kalit mos keldi. Stol yonida hali nam izlar bor. Bu xonaga yaqinda kimdir kirgan."
+  },
+  "cabinet_open": {
+    "title": "Baxmal quticha",
+    "text": "Belgili halqalar javonni ochdi. Ichida cho‘ntak soatiga mos kichik tishli g‘ildirak bor."
+  },
+  "watch": {
+    "title": "21:15",
+    "text": "Soatni tikladim. U 21:15 ni ko‘rsatmoqda. Katta soatning millarini ham shu vaqtga qo‘yish kerak."
+  },
+  "watch_repaired": {
+    "title": "Tiklangan vaqt",
+    "text": "Tishli g‘ildirak cho‘ntak soatiga mos tushdi. U 21:15 ni ko‘rsatmoqda."
+  },
+  "clock_set": {
+    "title": "Soatdagi bo‘lma",
+    "text": "Zaldagi katta soatni 21:15 ga qo‘yganimda maxfiy bo‘lma ochildi. Undagi saqlagich yerosti aloqa xonasining taqsimlagichiga mos keladi."
+  },
+  "clock": {
+    "title": "Soat mexanizmi",
+    "text": "Katta soatning qopqog‘ida kichik tirqish bor. Yashirin bo‘lma to‘g‘ri vaqtga sozlanganda ochilsa kerak."
+  },
+  "power_restored": {
+    "title": "Qaytgan yorug‘lik",
+    "text": "Saqlagich o‘rnatildi. Chap va o‘ng kalit yoqildi, o‘rtadagi kalit o‘chirildi. Perrondagi signal yana ishlaydi."
+  },
+  "power": {
+    "title": "Taqsimlagich sxemasi",
+    "text": "Elektr sxemasi: chap yoqilgan, o‘rta o‘chirilgan, o‘ng yoqilgan. Avval keramik saqlagich kerak."
+  },
+  "ticket": {
+    "title": "Bugun sotilgan chipta",
+    "text": "N. ismli yo‘lovchining chiptasi bugun 21:15 da bosilgan. Bekat o‘ttiz yil avval yopilgan bo‘lsa, uni kim sotgan?"
+  },
+  "wet_note": {
+    "title": "Qurimagan siyoh — 21:16",
+    "text": "«Chiroqni chap, o‘ng, o‘rta, chap tartibida yoq. Poyezd elektrni emas, xotirani eshitadi». Siyoh hali qurimagan. Imzo: M. — 21:16."
+  },
+  "evidence_linked": {
+    "title": "Kimdir meni kutgan",
+    "text": "Chipta bugun 21:15 da bosilgan. M. esa nam yozuvni bir daqiqadan so‘ng, 21:16 da qoldirgan. Demak, kimdir yaqindagina shu yerda bo‘lgan. Signal tartibi: chap — o‘ng — o‘rta — chap."
+  },
+  "evidence": {
+    "title": "Uchrashuv",
+    "text": "Chipta bugun 21:15 da bosilgan. M. esa nam yozuvni bir daqiqadan so‘ng, 21:16 da qoldirgan. Demak, kimdir yaqindagina shu yerda bo‘lgan. Signal tartibi: chap — o‘ng — o‘rta — chap."
+  },
+  "signal_sent": {
+    "title": "Qorong‘ilikdan javob",
+    "text": "Chap — o‘ng — o‘rta — chap. Signalga uzoqdan hushtak bilan javob berishdi. Elektrsiz rel’slarda nima kelmoqda?"
+  },
+  "ending": {
+    "title": "Haydovchisiz poyezd",
+    "text": "Haydovchisiz poyezd tuman ichidan chiqib keldi. Derazadagi bug‘da «Xush kelibsiz. Sizni yana kutgandik» degan jumla paydo bo‘ldi. Xatning sanasi o‘zgardi: endi u ertaga yozilgan. Davomi keyingi bobda."
+  },
+  "artifact": {
+    "title": "Begona xotira",
+    "text": "Kutish zalidagi tamg‘a ortidan topilgan binafsha xotira parchasi. Unda yetti nuqta bor; hozir faqat bittasi yorishgan. Bu ixtiyoriy topilma asosiy yo‘l uchun shart emas."
+  },
+  "footprints": {
+    "title": "Yangi izlar",
+    "text": "Nam loydagi izlar eshik tomon emas, devor tomonga ketgan. U yerda esa faqat eski ko‘zgu turibdi."
+  },
+  "keeper": {
+    "title": "M.ning ovozi",
+    "text": "Eski aloqa qurilmasidan ovoz keldi: «Soatga ishoning. Xotirangizga hali erta». Kim ekanini aytmadi."
+  },
+  "secret": {
+    "title": "Tamg‘a ortidagi xotira",
+    "text": "Xatdagi belgilar yechilgach, kutish zali devoridagi tamg‘a ortidan yashirin tokcha topdim. Binafsha parchada yetti nuqta bor, bittasi yorishgan. Kimdir uni aynan men uchun yashirgan."
+  },
+  "malik": {
+    "title": "Malikning ogohlantirishi",
+    "text": "Boshliq xonasidagi portretda «M. Orif — bekat boshlig‘i, 1931» deb yozilgan. Radio ortidagi ovoz o‘zini Malik deb tanishtirdi. U xatdagi ismga ishonmaslikni va soatni uyg‘otishni aytdi. Unga bergan javobim saqlandi."
+  }
+}

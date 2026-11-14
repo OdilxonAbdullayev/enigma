@@ -1,0 +1,65 @@
+name: Android APK
+
+on:
+  push:
+    branches: [main, work]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      ENIGMA_TOOLS_DIR: ${{ github.workspace }}/.tools/godot
+      XDG_DATA_HOME: ${{ github.workspace }}/.local/share
+      XDG_CONFIG_HOME: ${{ github.workspace }}/.local/config
+      ANDROID_USER_HOME: ${{ github.workspace }}/.local/android
+      XDG_CACHE_HOME: ${{ github.workspace }}/.local/cache
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: '13114758'
+          packages: 'platform-tools platforms;android-36 build-tools;36.1.0'
+      - name: Install verified Godot editor and templates
+        run: bash tools/install_godot.sh --templates
+      - name: Retain development signing identity between CI builds
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.XDG_DATA_HOME }}/godot/keystores/debug.keystore
+          key: enigma-android-debug-keystore-v1
+      - name: Configure local Android SDK paths
+        run: bash tools/configure_android.sh
+      - name: Import project
+        run: .tools/godot/godot --headless --path . --editor --import
+      - name: State, save and progression tests
+        run: .tools/godot/godot --headless --path . --script res://tests/test_state.gd
+      - name: Gameplay integration tests
+        run: .tools/godot/godot --headless --path . --script res://tests/test_flow.gd
+      - name: Touch input regression tests
+        run: .tools/godot/godot --headless --path . --script res://tests/test_input.gd
+      - name: Localization tests
+        run: .tools/godot/godot --headless --path . --script res://tests/test_localization.gd
+      - name: Export Android debug APK
+        run: |
+          mkdir -p builds
+          .tools/godot/godot --headless --path . --export-debug Android builds/enigma-android-debug.apk
+          test -s builds/enigma-android-debug.apk
+          "$ANDROID_HOME/build-tools/36.1.0/apksigner" verify --verbose builds/enigma-android-debug.apk
+          sha256sum builds/enigma-android-debug.apk > builds/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: enigma-android-debug
+          path: |
+            builds/enigma-android-debug.apk
+            builds/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 30
